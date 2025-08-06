@@ -84,7 +84,7 @@ def main():
     with torch.no_grad():
         baseline_sketches = []
         for seq in sequences_tensor:
-            sketch = baseline_sketch.sketch_sequence(seq.unsqueeze(0))
+            sketch = baseline_sketch(seq)
             baseline_sketches.append(sketch.squeeze())
         baseline_sketches = torch.stack(baseline_sketches)
     
@@ -92,7 +92,7 @@ def main():
     with torch.no_grad():
         learnable_sketches = []
         for seq in sequences_tensor:
-            sketch = learnable_sketch.forward(seq)
+            sketch = learnable_sketch(seq)
             learnable_sketches.append(sketch.squeeze())
         learnable_sketches = torch.stack(learnable_sketches)
     
@@ -155,7 +155,7 @@ def main():
         # Forward pass
         sketches = []
         for seq in sequences_tensor:
-            sketch = learnable_sketch.forward(seq)
+            sketch = learnable_sketch(seq)
             sketches.append(sketch.squeeze())
         sketches = torch.stack(sketches)
         
@@ -179,7 +179,7 @@ def main():
     with torch.no_grad():
         trained_sketches = []
         for seq in sequences_tensor:
-            sketch = learnable_sketch.forward(seq)
+            sketch = learnable_sketch(seq)
             trained_sketches.append(sketch.squeeze())
         trained_sketches = torch.stack(trained_sketches)
     
