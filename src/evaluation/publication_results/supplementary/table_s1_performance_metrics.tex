@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Detailed Performance Metrics for All Methods}
+\label{tab:performance_metrics}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Parameters & Avg_Quality & Avg_Time_ms & Memory_MB & Similarity_Corr & Improvement_Percent \\
+\midrule
+Baseline & 0 & 0.003 & 1.800 & 0.050 & 1.000 & 0.000 \\
+Phase 2 Learnable & 136 & 0.000 & 24.300 & 2.670 & 0.200 & -100.000 \\
+Phase 3 Multi-Res & 15420 & 0.000 & 163.800 & 12.950 & 0.950 & 71.700 \\
+Phase 3 Graph-Aware & 8736 & 0.000 & 54.500 & 4.590 & 0.880 & -42.300 \\
+Phase 3 Attention & 32416 & 0.000 & 104.500 & 4.290 & 0.820 & 10.800 \\
+Phase 3 Unified & 238188 & 0.000 & 212.100 & 18.930 & 0.970 & 60.900 \\
+\bottomrule
+\end{tabular}
+\end{table}

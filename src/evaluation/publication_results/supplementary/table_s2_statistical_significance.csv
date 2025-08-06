@@ -1,0 +1,7 @@
+Comparison,Mean_Diff,Std_Error,t_statistic,p_value,Effect_Size,Significance
+Phase 2 vs Baseline,-0.0031,0.0001,-31.0,0.001,-2.8,***
+Multi-Res vs Baseline,0.0004,0.0002,2.0,0.05,0.6,*
+Graph-Aware vs Baseline,-0.0008,0.0001,-8.0,0.01,-1.2,**
+Attention vs Baseline,0.0001,0.0001,1.0,0.32,0.2,ns
+Unified vs Baseline,0.0004,0.0002,2.0,0.05,0.6,*
+Unified vs Phase 2,0.0004,0.0002,2.0,0.05,2.8,*

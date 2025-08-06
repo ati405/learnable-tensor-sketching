@@ -1,0 +1,7 @@
+Method,Parameters,Avg_Quality,Avg_Time_ms,Memory_MB,Similarity_Corr,Improvement_Percent
+Baseline,0,0.0031,1.8,0.05,1.0,0.0
+Phase 2 Learnable,136,0.0,24.3,2.67,0.2,-100.0
+Phase 3 Multi-Res,15420,0.0004,163.8,12.95,0.95,71.7
+Phase 3 Graph-Aware,8736,0.0002,54.5,4.59,0.88,-42.3
+Phase 3 Attention,32416,0.0002,104.5,4.29,0.82,10.8
+Phase 3 Unified,238188,0.0004,212.1,18.93,0.97,60.9
